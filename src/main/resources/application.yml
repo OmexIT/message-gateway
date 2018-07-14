@@ -25,3 +25,12 @@ spring:
 hostconfig:
   host-address: localhost
   protocol: http
+
+logging:
+  file: logs/gateway.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{5}) - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{5}) - %msg%n"
+  level:
+    org.springframework.security: info
+    org.fineract.messagegateway.sms.providers.impl.vaspro.VasproSMSService: debug
