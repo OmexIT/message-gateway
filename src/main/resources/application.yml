@@ -27,7 +27,7 @@ hostconfig:
   protocol: http
 
 logging:
-  file: logs/gateway.log
+  file: logs/messageservice.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{5}) - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{5}) - %msg%n"
